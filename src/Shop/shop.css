@@ -1,0 +1,11 @@
+.productList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,45%));
+    justify-content: center;
+    align-content: center;
+}
+
+picture img{
+    height: 250px;
+    width: 200px;
+}
