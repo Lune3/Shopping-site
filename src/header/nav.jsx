@@ -5,7 +5,7 @@ function Nav(){
         <nav>
             <ul>
                 <li>
-                    <Link>Home</Link>
+                    <Link to={'/'}>Home</Link>
                 </li>
                 <li>
                     <Link>Shop</Link>
