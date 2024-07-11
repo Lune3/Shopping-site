@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit,minmax(200px,30%));
     justify-content: center;
     align-content: center;
+    gap: 20px;
 }
 
 .productList li{
@@ -16,7 +17,7 @@ li div{
     justify-content: space-between;
 }
 
-input{
+input[type="number"]{
     width: 100px;
 }
 

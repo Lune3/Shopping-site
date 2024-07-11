@@ -1,5 +1,4 @@
-import { Products } from "./Products"
-import { useOutletContext } from "react-router-dom";
+import { Products } from "./Products";
 import "./shop.css"
 
 function Shop(){

@@ -15,7 +15,7 @@ function Header({itemAmount}){
                     <li>
                         <img src="src/assets/heart-svgrepo-com.svg"/>
                     </li>
-                    <li>
+                    <li className="cart">
                         <div className="cartItems">{itemAmount > 0 ? itemAmount:""}</div>
                         <img src="src/assets/shopping-bag-svgrepo-com.svg"></img>
                     </li>

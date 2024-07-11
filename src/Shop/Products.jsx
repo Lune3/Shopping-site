@@ -13,7 +13,6 @@ function Products({prop}){
             try{
                 const productData = await getProducts();
                 setProducts(productData);
-                console.log(productData);
             }
             catch(err){
                 setError(err);
