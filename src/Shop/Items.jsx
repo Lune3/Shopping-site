@@ -1,3 +1,28 @@
+function trimLength(productName){
+    let whiteSpaceCount = 0;
+    for(let i = 0;i < productName.length;i++){
+        if(productName[i] === ' '){
+            whiteSpaceCount++;
+        }
+    }
+    let newName = "";
+    let i = 0;
+    if(whiteSpaceCount > 5){
+        let counter = 0;
+        while(counter != 5){
+            if(productName[i] === ' '){
+                counter++;
+            }
+            newName += productName[i];
+            i++;
+        }
+    }
+    else{
+        newName = productName;
+    } 
+    return newName;
+}
+
 function Items({products}){
     const ItemsList = products.map((product) => {
         return (
@@ -7,8 +32,8 @@ function Items({products}){
                 </picture>
                 <div>
                     <div>
-                        <p>{product.title}</p>
-                        <p>{product.price}</p>
+                        <p>{trimLength(product.title)}</p>
+                        <p>${product.price}</p>
                     </div>
                     <div>
                         <img/>
