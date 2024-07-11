@@ -1,3 +1,5 @@
+import { useOutletContext } from "react-router-dom";
+
 function trimLength(productName){
     let whiteSpaceCount = 0;
     for(let i = 0;i < productName.length;i++){
@@ -24,6 +26,20 @@ function trimLength(productName){
 }
 
 function Items({products}){
+    const [itemAmount,setItemAmount] = useOutletContext();
+
+    function increaseAmount(){
+        let newCount = itemAmount + 1;
+        setItemAmount(newCount);
+    }
+
+    function decreaseAmount(){
+        if(itemAmount > 0){
+            let newCount = itemAmount - 1;
+            setItemAmount(newCount);
+        }
+    }
+
     const ItemsList = products.map((product) => {
         return (
             <li key={product.id}>
@@ -35,10 +51,10 @@ function Items({products}){
                         <p>{trimLength(product.title)}</p>
                         <p>${product.price}</p>
                     </div>
-                    <div>
-                        <img/>
+                    <div className="cartUpdate">
+                        <img src="src/assets/minus-svgrepo-com.svg" onClick={decreaseAmount}  alt="Remove item image"/>
                         <input type="number"/>
-                        <img />
+                        <img src="src/assets/plus-svgrepo-com.svg" onClick={increaseAmount} alt="Add item image"/>
                     </div>
                 </div>
             </li>

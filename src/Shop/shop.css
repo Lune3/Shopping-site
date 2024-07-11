@@ -5,7 +5,32 @@
     align-content: center;
 }
 
+.productList li{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px 0px 100px;
+}
+
+li div{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 100px;
+}
+
+picture{
+    align-self: center;
+}
+
 picture img{
     height: 250px;
     width: 200px;
+}
+
+.cartUpdate img{
+    cursor: pointer;
+    width: 25px;
+    height: auto;
 }

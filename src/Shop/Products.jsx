@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "./productAPI";
 import { Items } from "./Items";
 
-function Products(){
+function Products({prop}){
 
     const [error,setError] = useState();
     const [products,setProducts] = useState();
