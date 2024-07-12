@@ -25,6 +25,7 @@ function trimLength(productName){
     return newName;
 }
 
+
 function Items({products}){
     const [itemAmount,setItemAmount] = useOutletContext();
 
@@ -40,6 +41,14 @@ function Items({products}){
         }
     }
 
+    function handleKeyPress(e){
+        if(e.key === "Enter" && parseInt(e.target.value) > 0){
+            let newCount = itemAmount + parseInt(e.target.value);
+            setItemAmount(newCount);
+        }
+        e.target.value = "";
+    }
+
     const ItemsList = products.map((product) => {
         return (
             <li key={product.id}>
@@ -53,7 +62,7 @@ function Items({products}){
                     </div>
                     <div className="cartUpdate">
                         <img src="src/assets/minus-svgrepo-com.svg" onClick={decreaseAmount}  alt="Remove item image"/>
-                        <input type="number"/>
+                        <input type="number" onKeyDown={handleKeyPress}/>
                         <img src="src/assets/plus-svgrepo-com.svg" onClick={increaseAmount} alt="Add item image"/>
                     </div>
                 </div>
