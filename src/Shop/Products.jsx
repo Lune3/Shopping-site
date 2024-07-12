@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "./productAPI";
 import {Items} from "./Items";
+import { Loading } from "./Loading";
 
 function Products(){
 
@@ -62,7 +63,7 @@ function Products(){
                 
                 </div>
             </div>
-            {loading ?"Please wait":(<Items products={products}/>)}
+            {loading ?(<Loading/>):(<Items products={products}/>)}
         </div>
     )
 }
