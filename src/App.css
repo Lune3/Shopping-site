@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("src/assets/hmgoepprod (1).jpeg"),url("src/assets/hmgoepprod (3).jpeg"),url("src/assets/hmgoepprod.jpeg"),url("src/assets/hmgoepprod (4).jpeg");
+    background-repeat: no-repeat;
+    background-size: max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px);
+    background-position: 0% 0%, 33.333% 0%, 66.667% 0%, 100% 0%;
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    color: rgb(254, 254, 254);
+    align-items: center;
+    gap: 20px;
+}
+
+.homeContent *{
+    margin: 0;
+}
+
+.homeContent h2{
+    font-size: 2.5rem;
+}
+
+.homeContent h1{
+    font-size: 3rem;
+}
+
+.homeContent p{
+    font-size: 1.7rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.homeContent button{
+    width: 175px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 6px;
+}
+
+.homeContent button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+

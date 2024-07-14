@@ -18,24 +18,71 @@
 header{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.title,.search{
+.title{
     display: flex;
 }
 
-nav ul,ul{
+.title{
+    gap: 50px;
+}
+
+.title h1{
+    font-size: 2.5rem;
+}
+
+nav{
+    align-self: center;
+}
+
+nav ul{
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 20px;
 }
 
-input{
-    height: 30px;
-    align-self: center;
+nav ul li{
+    font-size: 1.15rem;
+    text-decoration: none;
 }
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.search{
+    display: flex;
+    gap: 20px;
+}
+
+
+.search input{
+    height: 40px;
+    align-self: center;
+    width: 500px;
+    background-image: url("src/assets/search-svgrepo-com.svg");
+    background-size:30px 25px;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    text-indent: 40px; 
+    padding: 5px 3px;
+    transition:0.3s;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(231, 231, 231);
+}
+
+.icons{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 
 .cart{
     position: relative;

@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import { Home } from './Home.jsx';
 import { Shop } from './Shop/Shop.jsx';
-
 import { ErrorPage } from './ErrorPage.jsx';
 
 const router = createBrowserRouter([
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
     errorElement:<ErrorPage/>,
     children:[
       {
-        index: true,
+        
         path:"home",
         element:<Home/>
       },

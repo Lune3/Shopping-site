@@ -10,7 +10,7 @@ function Header({itemAmount}){
                 <Nav></Nav>
            </div>
            <div className="search">
-                <input type="text" placeholder="search for product"/>
+                <input type="text" placeholder="Search for a product"/>
                 <ul className="icons">
                     <li>
                         <img src="src/assets/heart-svgrepo-com.svg"/>
