@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     margin: 0;
     box-sizing: border-box;
+}
+
+*{
+
+    font-family: "Noto Sans", sans-serif;
 }
 
 .app{
@@ -11,11 +19,12 @@ body{
 
 .home{
     flex: 1;
+    font-family: "Poppins", sans-serif; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("src/assets/hmgoepprod (1).jpeg"),url("src/assets/hmgoepprod (3).jpeg"),url("src/assets/hmgoepprod.jpeg"),url("src/assets/hmgoepprod (4).jpeg");
+    background-image: url("src/assets/hmgoepprod.webp"),url("src/assets/hmgoepprod (3).jpeg"),url("src/assets/hmgoepprod.jpeg"),url("src/assets/hmgoepprod (4).jpeg");
     background-repeat: no-repeat;
     background-size: max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px);
     background-position: 0% 0%, 33.333% 0%, 66.667% 0%, 100% 0%;
@@ -26,7 +35,7 @@ body{
     flex-direction: column;
     color: rgb(254, 254, 254);
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .homeContent *{
@@ -49,7 +58,7 @@ body{
 
 .homeContent button{
     width: 175px;
-    height: 40px;
+    height: 50px;
     background-color: transparent;
     border: 2px white solid;
     border-radius: 6px;
