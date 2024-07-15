@@ -91,5 +91,31 @@ nav ul li a{
 .cartItems{
     position: absolute;
     left: 70%;
-    top: 5%
+    top: 0%;
+    color: white;
+    border-radius: 15px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    text-align: center;
+    animation: 300ms popUp ease-in-out;
+    font-size: 0.9rem;
 }
+
+@keyframes popUp{
+    from{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+
+}
+

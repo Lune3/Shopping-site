@@ -51,7 +51,7 @@ function Items({products}){
 
     const ItemsList = products.map((product) => {
         return (
-            <li key={product.id}>
+            <li key={product.id} className="items">
                 <picture>
                     <img src={product.image} alt="product image"/>
                 </picture>

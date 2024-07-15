@@ -16,7 +16,7 @@
     padding: 15px;
 }
 
-li > div{
+.items > div{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
