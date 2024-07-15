@@ -47,9 +47,27 @@ nav ul{
     gap: 20px;
 }
 
-nav ul li{
+nav ul li {
+    box-sizing: border-box;
     font-size: 1.07rem;
     text-decoration: none;
+    cursor: pointer;
+    position: relative; 
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 200ms ease-in-out 100ms;
+}
+
+nav ul li:hover::after {
+    width: 100%;
 }
 
 nav ul li a{
