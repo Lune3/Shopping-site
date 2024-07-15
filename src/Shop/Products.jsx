@@ -48,8 +48,8 @@ function Products(){
 
     return (
         <div className="itemGrid">
-            <div className="selection" style={{display:"flex",justifyContent:"space-around"}}>
-                <div style={{display:"flex"}}>
+            <div className="selection" style={{display:"flex",justifyContent:"space-around",marginBottom:"45px",fontSize:"1.2rem"}}>
+                <div style={{display:"flex",gap:"10px"}}>
                     <div>Shop{" >"}</div><div>Products{" >"} </div>
                     <select id="products" onChange={filterProduct}>
                         <option value={""}>All</option>
@@ -59,8 +59,7 @@ function Products(){
                         <option value={"jewelery"}>Jewellery</option>
                     </select>
                 </div>
-                <div >
-                
+                <div style={{marginRight:"500px"}}>
                 </div>
             </div>
             {loading ?(<Loading/>):(<Items products={products}/>)}

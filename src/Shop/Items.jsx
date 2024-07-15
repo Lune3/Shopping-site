@@ -56,13 +56,13 @@ function Items({products}){
                     <img src={product.image} alt="product image"/>
                 </picture>
                 <div>
-                    <div>
+                    <div className="productDetails">
                         <p>{trimLength(product.title)}</p>
                         <p>${product.price}</p>
                     </div>
                     <div className="cartUpdate">
                         <img src="src/assets/minus-svgrepo-com.svg" onClick={decreaseAmount}  alt="Remove item image"/>
-                        <input type="number" onKeyDown={handleKeyPress}/>
+                        <input type="number" maxLength={5} onKeyDown={handleKeyPress}/>
                         <img src="src/assets/plus-svgrepo-com.svg" onClick={increaseAmount} alt="Add item image"/>
                     </div>
                 </div>
