@@ -8,7 +8,6 @@ import {
 import { Home } from './Home.jsx';
 import { Shop } from './Shop/Shop.jsx';
 import { ErrorPage } from './ErrorPage.jsx';
-import { redirectDocument } from "react-router-dom";
 
 
 const router = createBrowserRouter([
@@ -36,5 +35,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-redirectDocument("/home");
 
