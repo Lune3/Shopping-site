@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("assets/hmgoepprod.webp"),url("assets/hmgoepprod (3).jpeg"),url("assets/hmgoepprod.jpeg"),url("assets/hmgoepprod (4).jpeg");
+    background-image: url("/assets/hmgoepprod.webp"),url("/assets/hmgoepprod (3).jpeg"),url("/assets/hmgoepprod.jpeg"),url("/assets/hmgoepprod (4).jpeg");
     background-repeat: no-repeat;
     background-size: max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px),max(25%,200px) max(100%,400px);
     background-position: 0% 0%, 33.333% 0%, 66.667% 0%, 100% 0%;
